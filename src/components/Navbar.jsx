@@ -45,7 +45,7 @@ const Navbar = () => {
                     {/* Desktop Theme Toggle */}
                     <li className="hidden md:block">
                         <button
-                            className="p-2 rounded-md hover:bg-gray-100 dark:hover:bg-[#1261A0] transition-colors"
+                            className="p-2 rounded-md hover:bg-gray-100 hover:text-white dark:hover:bg-[#1261A0] transition-colors"
                             onClick={toggleTheme}
                             aria-label="Toggle theme"
                         >

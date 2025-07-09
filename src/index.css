@@ -9,5 +9,18 @@ html {
 }
 
 .dark #typewritter {
-    @apply bg-[linear-gradient(to_right,_white_0%,_#1261A0_70%,_#1261A0_100%)] bg-clip-text text-transparent
+    @apply bg-[linear-gradient(to_right,_white_0%,_#1261A0_70%,_#1261A0_100%)] bg-clip-text text-transparent;
+}
+
+.dark #experience {
+    @apply dark:bg-gray-900 text-white;
+}
+
+.dark .vertical-timeline-element-date {
+    @apply dark:text-white;
+}
+
+/* hide the timeline arrow */
+.timeline-element .vertical-timeline-element-content-arrow {
+    position: relative;
 }

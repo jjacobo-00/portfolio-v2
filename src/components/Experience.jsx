@@ -39,14 +39,16 @@ const ExpandableDescription = ({ text }) => {
 				
 				{/* Fade overlay when collapsed */}
 				{!expanded && (
-					<div className="absolute bottom-0 left-0 w-full h-10 bg-gradient-to-t from-white via-white/80 to-transparent pointer-events-none" />
+					<div
+						className={`absolute bottom-0 left-0 w-full h-10 bg-gradient-to-t pointer-events-none 'from-white via-white/80 to-transparent'`}
+					/>
 				)}
 			</div>
 			
 			{/* Toggle button */}
 			<button
 				onClick={() => setExpanded(!expanded)}
-				className="mt-2 text-[#1261A0] hover:underline focus:outline-none font-medium"
+				className="mt-2 hover:underline focus:outline-none font-medium cursor-pointer"
 			>
 				{expanded ? 'See less' : 'See more'}
 			</button>
@@ -56,8 +58,6 @@ const ExpandableDescription = ({ text }) => {
 
 const Experience = () => {
 	const { theme } = useTheme();
-	
-	const isDark = theme === 'dark';
 	
 	return (
 		<section
@@ -80,8 +80,8 @@ const Experience = () => {
 							color: '#fff',
 						}}
 						contentStyle={{
-							background: isDark ? '#1f2937' : '#f9fafb',
-							color: isDark ? '#f9fafb' : '#1f2937',
+							background: '#f9fafb',
+							color: '#1f2937',
 							boxShadow:
 								'rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px',
 							borderRadius: '0.5rem',
@@ -91,7 +91,7 @@ const Experience = () => {
 						<h4 className="text-sm text-gray-500 mb-2">
 							{exp.company}
 						</h4>
-						<ExpandableDescription text={exp.description} />
+						<ExpandableDescription text={exp.description}/>
 					</VerticalTimelineElement>
 				))}
 			</VerticalTimeline>

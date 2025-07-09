@@ -26,5 +26,5 @@ body {
 
 /* hide the timeline arrow */
 .timeline-element .vertical-timeline-element-content-arrow {
-    position: relative;
+    display: none;
 }

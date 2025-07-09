@@ -40,9 +40,10 @@ const ExpandableDescription = ({ text }) => {
 				{/* Fade overlay when collapsed */}
 				{!expanded && (
 					<div
-						className={`absolute bottom-0 left-0 w-full h-10 bg-gradient-to-t pointer-events-none 'from-white via-white/80 to-transparent'`}
+						className={`absolute bottom-0 left-0 w-full h-10 bg-gradient-to-t pointer-events-none from-white via-white/80 to-transparent`}
 					/>
 				)}
+			
 			</div>
 			
 			{/* Toggle button */}

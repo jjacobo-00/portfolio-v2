@@ -1,7 +1,7 @@
 import React from 'react';
 import profile from '../assets/images/jjacobo-1.webp';
 import { Typewriter } from 'react-simple-typewriter';
-import { ChevronDown } from 'lucide-react'; // icon for scroll cue
+import { ChevronDown, Download } from 'lucide-react'; // icon for scroll cue
 
 const About = () => {
 	return (
@@ -41,6 +41,30 @@ const About = () => {
 					(Angular), and web (CodeIgniter 4) applications — and I’m always eager to learn new
 					technologies to build scalable, modern solutions.
 				</p>
+				
+				<div className="flex flex-wrap justify-center md:justify-start gap-4 mt-4">
+					<a
+						href="#projects"
+						className="px-5 py-2 rounded-lg bg-[#1261A0] text-white hover:bg-[#0e4d80] transition"
+					>
+						View Projects
+					</a>
+					<a
+						href="/resume.pdf"
+						target="_blank"
+						rel="noopener noreferrer"
+						className="px-5 py-2 rounded-lg border border-[#1261A0] text-[#1261A0] hover:bg-gray-100 transition inline-flex items-center gap-2"
+					>
+						<Download className="w-4 h-4" />
+						Resume
+					</a>
+					<a
+						onClick={() => (window.location.href = 'mailto:jacobojhay13@gmail.com')}
+						className="px-5 py-2 rounded-lg border bg-transparent border-gray-400 hover:bg-gray-100 dark:hover:bg-white hover:text-black dark:hover:text-black transition cursor-pointer"
+					>
+						Say Hello
+					</a>
+				</div>
 			</div>
 			
 			{/* Right image */}

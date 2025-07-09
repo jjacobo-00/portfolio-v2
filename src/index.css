@@ -4,8 +4,12 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    @apply bg-white text-black transition-colors duration-300;
+}
+
 .dark body {
-    @apply bg-white dark:bg-gray-900 dark:text-white transition-colors duration-300;
+    @apply bg-gray-900 text-white;
 }
 
 .dark #typewritter {

@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+.dark body {
+    @apply bg-white dark:bg-gray-900 dark:text-white transition-colors duration-300;
+}
+
+.dark #typewritter {
+    @apply bg-[linear-gradient(to_right,_white_0%,_#1261A0_70%,_#1261A0_100%)] bg-clip-text text-transparent
+}

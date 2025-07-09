@@ -1,10 +1,11 @@
 import React from 'react';
 import profile from '../assets/images/jjacobo-1.webp';
 import { Typewriter } from 'react-simple-typewriter';
+import { ChevronDown } from 'lucide-react'; // icon for scroll cue
 
 const About = () => {
 	return (
-		<section className="font-mono min-h-[calc(100vh-64px)] flex flex-col-reverse md:flex-row items-center justify-between gap-8 px-4 sm:px-6 md:px-16 py-10">
+		<section id="about" className="relative font-mono min-h-[calc(100vh-64px)] flex flex-col-reverse md:flex-row items-center justify-between gap-8 px-4 sm:px-6 md:px-16 py-10">
 			{/* Left content */}
 			<div className="w-full md:w-2/3 md:pr-6 text-center md:text-left">
 				<h1 className="text-lg sm:text-xl md:text-2xl mb-2">Hi, my name is</h1>
@@ -50,6 +51,14 @@ const About = () => {
 					className="rounded-xl shadow-lg object-cover w-full h-auto"
 				/>
 			</div>
+			
+			{/* Scroll-down indicator */}
+			<a
+				href="#experience"
+				className="absolute bottom-4 left-1/2 transform -translate-x-1/2"
+			>
+				<ChevronDown className="w-6 h-6 animate-bounce text-[#1261A0] cursor-pointer" />
+			</a>
 		</section>
 	);
 };

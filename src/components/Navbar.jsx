@@ -16,11 +16,31 @@ const Navbar = () => {
                 
                 {/* Desktop Menu */}
                 <ul className="hidden md:flex items-center space-x-6 font-medium">
-                    <li className="hover:text-blue-500 cursor-pointer">About</li>
-                    <li className="hover:text-blue-500 cursor-pointer">Experience</li>
-                    <li className="hover:text-blue-500 cursor-pointer">Projects</li>
-                    <li className="hover:text-blue-500 cursor-pointer">Skills</li>
-                    <li className="hover:text-blue-500 cursor-pointer">Education</li>
+                    <li>
+                        <a href="#about" className="hover:text-blue-500 cursor-pointer">
+                            About
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#experience" className="hover:text-blue-500 cursor-pointer">
+                            Experience
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#projects" className="hover:text-blue-500 cursor-pointer">
+                            Projects
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#skills" className="hover:text-blue-500 cursor-pointer">
+                            Skills
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#education" className="hover:text-blue-500 cursor-pointer">
+                            Education
+                        </a>
+                    </li>
                     
                     {/* Desktop Theme Toggle */}
                     <li className="hidden md:block">

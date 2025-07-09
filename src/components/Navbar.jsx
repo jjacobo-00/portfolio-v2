@@ -12,7 +12,7 @@ const Navbar = () => {
     return (
         <nav className="transition-colors duration-300 w-full">
             <div className="flex justify-between items-center px-4 sm:px-6 md:px-15 py-4">
-                <img src={logo} alt="Logo" className="h-10 w-auto cursor-pointer" />
+                <img src={logo} alt="Logo" className="h-10 w-auto cursor-pointer transform transition-transform duration-200 hover:scale-125" />
                 
                 {/* Desktop Menu */}
                 <ul className="hidden md:flex items-center space-x-6 font-medium">

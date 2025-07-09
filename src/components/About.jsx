@@ -45,7 +45,7 @@ const About = () => {
 				<div className="flex flex-wrap justify-center md:justify-start gap-4 mt-4">
 					<a
 						href="#projects"
-						className="px-5 py-2 rounded-lg bg-[#1261A0] text-white hover:bg-[#0e4d80] transition"
+						className="px-5 py-2 rounded-lg bg-[#1261A0] text-white hover:bg-[#0e4d80] transform transition-transform duration-200 hover:scale-105"
 					>
 						View Projects
 					</a>
@@ -53,14 +53,14 @@ const About = () => {
 						href="/resume.pdf"
 						target="_blank"
 						rel="noopener noreferrer"
-						className="px-5 py-2 rounded-lg border border-[#1261A0] text-[#1261A0] hover:bg-gray-100 transition inline-flex items-center gap-2"
+						className="px-5 py-2 rounded-lg border border-[#1261A0] text-[#1261A0] hover:bg-gray-100 dark:hover:bg-white hover:text-black dark:hover:text-black inline-flex items-center gap-2 transform transition-transform duration-200 hover:scale-105"
 					>
 						<Download className="w-4 h-4" />
 						Resume
 					</a>
 					<a
 						onClick={() => (window.location.href = 'mailto:jacobojhay13@gmail.com')}
-						className="px-5 py-2 rounded-lg border bg-transparent border-gray-400 hover:bg-gray-100 dark:hover:bg-white hover:text-black dark:hover:text-black transition cursor-pointer"
+						className="px-5 py-2 rounded-lg border bg-transparent border-gray-400 hover:bg-gray-100 dark:hover:bg-white hover:text-black dark:hover:text-black transform transition-transform duration-200 hover:scale-105"
 					>
 						Say Hello
 					</a>

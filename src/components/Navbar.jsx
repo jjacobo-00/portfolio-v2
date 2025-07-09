@@ -36,11 +36,6 @@ const Navbar = () => {
                             Skills
                         </a>
                     </li>
-                    <li>
-                        <a href="#education" className="hover:text-blue-500 cursor-pointer">
-                            Education
-                        </a>
-                    </li>
                     
                     {/* Desktop Theme Toggle */}
                     <li className="hidden md:block">
@@ -86,7 +81,6 @@ const Navbar = () => {
                     <li className="hover:text-blue-500 cursor-pointer">Experience</li>
                     <li className="hover:text-blue-500 cursor-pointer">Projects</li>
                     <li className="hover:text-blue-500 cursor-pointer">Skills</li>
-                    <li className="hover:text-blue-500 cursor-pointer">Education</li>
                 </ul>
             )}
         </nav>

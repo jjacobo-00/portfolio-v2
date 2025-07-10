@@ -13,7 +13,7 @@ const experiences = [
 		role: 'Full-Stack Developer',
 		company: 'PA-Support Subic Ltd Inc',
 		description:
-			'Maintaining and enhancing a large-scale legacy codebase built with native PHP, JavaScript, jQuery, and MySQL. Refactored marketplace UI for improved usability, implemented product image zoom on product pages, and developed the customer review system. Improved discount logic based on loyalty rank and added a barcode scanner feature to the admin panel. Contributed to ongoing enhancements for the Play-Asia.com platform.',
+			'Maintaining and enhancing a large-scale legacy codebase built with native PHP, JavaScript, jQuery, and MySQL. Refactored marketplace UI for improved usability, implemented product image zoom on product pages, and developed the customer review system. Improved discount logic based on loyalty rank and added a barcode scanner feature to the admin panel. Integrated multiple delivery carrier APIs (e.g., FedEx, BoxC, UPS) for shipment tracking and automated delivery status updates (in transit, delivered) using cron jobs for the admin warehouse tracking system. Contributed to ongoing enhancements for the Play-Asia.com platform.',
 	},
 	{
 		year: 'May 30, 2022 - Sep 06, 2023',

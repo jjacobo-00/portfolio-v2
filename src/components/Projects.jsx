@@ -29,7 +29,7 @@ const testProjects = [
     title: 'DevPlayground',
     year: 2023,
     description:
-      'A dynamic collection of mini web apps built on a single page. Each module opens in a modal and showcases interactive UI, form handling, and real-time logic using pure JavaScript and jQuery.',
+      'A dynamic collection of mini web apps built on a single page. Each module opens in a modal and showcases interactive UI and form handling.',
     tech: [
       'JavaScript',
       'jQuery',

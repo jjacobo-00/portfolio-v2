@@ -24,12 +24,9 @@ const experiences = [
   },
 ];
 
-const ExpandableDescription = ({ text }) => {
-  const [expanded, setExpanded] = React.useState(false);
-
+const ExpandableDescription = ({ text, expanded }) => {
   return (
     <div className="relative text-sm leading-relaxed">
-      {/* Animated content box */}
       <div
         className={`relative overflow-hidden transition-all duration-500 ease-in-out ${
           expanded ? 'max-h-[1000px]' : 'max-h-[110px]'
@@ -37,28 +34,24 @@ const ExpandableDescription = ({ text }) => {
       >
         <p>{text}</p>
 
-        {/* Fade overlay when collapsed */}
         {!expanded && <div className="fade-overlay" />}
       </div>
-
-      {/* Toggle button */}
-      <button
-        onClick={() => setExpanded(!expanded)}
-        className="mt-2 hover:underline focus:outline-none font-medium cursor-pointer"
-      >
-        {expanded ? 'See less' : 'See more'}
-      </button>
     </div>
   );
 };
 
 const Experience = () => {
   const { theme } = useTheme();
+  const [expandedIndex, setExpandedIndex] = React.useState(null);
+
+  const toggleExpand = (index) => {
+    setExpandedIndex((prev) => (prev === index ? null : index));
+  };
 
   return (
     <section
       id="experience"
-      className="font-mono min-h-[calc(100vh-64px)] px-4 sm:px-6 md:px-16 py-16 bg-gray-50 text-black"
+      className="font-mono min-h-[calc(100vh-64px)] px-4 sm:px-6 md:px-16 py-16 bg-gray-50 text-black dark:bg-gray-900 dark:text-white"
     >
       <h2 className="text-3xl font-bold mb-12 text-center text-[#1261A0]">
         Experience
@@ -67,7 +60,7 @@ const Experience = () => {
       <VerticalTimeline lineColor="#1261A0">
         {experiences.map((exp, index) => (
           <VerticalTimelineElement
-            className="timeline-element"
+            className="timeline-element group cursor-pointer"
             key={index}
             date={exp.year}
             icon={<Briefcase />}
@@ -80,10 +73,16 @@ const Experience = () => {
                 'rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px',
               borderRadius: '0.5rem',
             }}
+            contentArrowStyle={{ display: 'none' }}
           >
-            <h3 className="text-lg font-bold">{exp.role}</h3>
-            <h4 className="text-sm text-gray-500 mb-2">{exp.company}</h4>
-            <ExpandableDescription text={exp.description} />
+            <div onClick={() => toggleExpand(index)}>
+              <h3 className="text-lg font-bold">{exp.role}</h3>
+              <h4 className="text-sm text-gray-500 mb-2">{exp.company}</h4>
+              <ExpandableDescription
+                text={exp.description}
+                expanded={expandedIndex === index}
+              />
+            </div>
           </VerticalTimelineElement>
         ))}
       </VerticalTimeline>

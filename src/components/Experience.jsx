@@ -51,7 +51,7 @@ const Experience = () => {
   return (
     <section
       id="experience"
-      className="font-mono min-h-[calc(100vh-64px)] px-4 sm:px-6 md:px-16 py-16 bg-gray-50 text-black dark:bg-gray-900 dark:text-white"
+      className="font-mono min-h-[calc(100vh-64px)] px-4 sm:px-6 md:px-16 py-16 bg-gray-50"
     >
       <h2 className="text-3xl font-bold mb-12 text-center text-[#1261A0]">
         Experience

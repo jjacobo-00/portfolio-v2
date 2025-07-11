@@ -41,6 +41,38 @@ const testProjects = [
     ],
     link: 'https://jjacobo.infinityfreeapp.com/pos.php',
   },
+  {
+    title: 'Service Manager (Web & Mobile)',
+    year: 2022,
+    description:
+      'A field service tool with a web dashboard for admins to assign and track jobs, and a mobile app for technicians to perform diagnostics, update statuses, and submit reports on-site.',
+    tech: [
+      'CodeIgniter 4',
+      'Javascript',
+      'MySQL',
+      'Tailwind',
+      'Vite',
+      'HTML',
+      'Ionic',
+      'Angular',
+    ],
+    link: '#',
+  },
+  {
+    title: 'Veterinary Web Based Management System',
+    year: 2022,
+    description:
+      'A web platform for managing veterinary appointments, pet records, clinic locations, inventory, and sales with integrated POS, Google Maps, and PayPal payment support.',
+    tech: [
+      'PHP',
+      'Javascript',
+      'MySQL',
+      'Bootstrap',
+      'Google Map API',
+      'Paypal API',
+    ],
+    link: '#',
+  },
 ];
 
 const Projects = () => {

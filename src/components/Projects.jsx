@@ -94,7 +94,7 @@ const Projects = () => {
               href={project.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex flex-col justify-between h-full bg-white rounded-lg p-6 transition-transform transform hover:scale-105"
+              className="project-card flex flex-col justify-between h-full rounded-lg p-6 transition-transform transform hover:scale-105"
               style={{
                 boxShadow:
                   'rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px',
@@ -107,7 +107,7 @@ const Projects = () => {
                     ({project.year})
                   </span>
                 </h3>
-                <p className="text-sm text-black mb-4">{project.description}</p>
+                <p className="text-sm mb-4">{project.description}</p>
               </div>
 
               <div className="flex flex-wrap gap-2 text-xs text-white">

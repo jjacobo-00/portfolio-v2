@@ -1,4 +1,8 @@
 import React, { useState } from 'react';
+import { useTheme } from '../hooks/useTheme.jsx';
+
+const isDark = 'dark' ? true : false;
+console.log(isDark);
 
 const categories = [
   'All',
@@ -11,80 +15,96 @@ const categories = [
   'AI',
 ];
 
-const skillsData = [
-  {
-    name: 'JavaScript',
-    category: 'Languages',
-    icon: 'devicon-javascript-plain colored',
-  },
-  {
-    name: 'TypeScript',
-    category: 'Languages',
-    icon: 'devicon-typescript-plain colored',
-  },
-  { name: 'C#', category: 'Languages', icon: 'devicon-csharp-plain colored' },
-  {
-    name: 'C++',
-    category: 'Languages',
-    icon: 'devicon-cplusplus-plain colored',
-  },
-  { name: 'HTML', category: 'Frontend', icon: 'devicon-html5-plain colored' },
-  { name: 'CSS', category: 'Frontend', icon: 'devicon-css3-plain colored' }, // optional
-  {
-    name: 'React',
-    category: 'Frontend',
-    icon: 'devicon-react-original colored',
-  },
-  {
-    name: 'Angular',
-    category: 'Frontend',
-    icon: 'devicon-angularjs-plain colored',
-  },
-  { name: 'Ionic', category: 'Mobile', icon: 'devicon-ionic-original colored' },
-  {
-    name: 'Tailwind',
-    category: 'Frontend',
-    icon: 'devicon-tailwindcss-plain colored',
-  },
-  {
-    name: 'Bootstrap',
-    category: 'Frontend',
-    icon: 'devicon-bootstrap-plain colored',
-  },
-  {
-    name: 'JQuery',
-    category: 'Frontend',
-    icon: 'devicon-jquery-plain colored',
-  },
-  { name: 'Vite', category: 'Tools', icon: 'devicon-vitejs-plain colored' },
-  {
-    name: 'Node.js',
-    category: 'Backend',
-    icon: 'devicon-nodejs-plain colored',
-  },
-  { name: 'PHP', category: 'Backend', icon: 'devicon-php-plain colored' },
-  {
-    name: 'Laravel',
-    category: 'Backend',
-    icon: 'devicon-laravel-plain colored',
-  },
-  {
-    name: 'CodeIgniter 4',
-    category: 'Backend',
-    icon: 'devicon-codeigniter-plain colored',
-  }, // ⚠️ May not exist — fallback to image if needed
-  { name: 'MySQL', category: 'Backend', icon: 'devicon-mysql-plain colored' },
-  {
-    name: 'Firebase',
-    category: 'Deployment',
-    icon: 'devicon-firebase-plain colored',
-  },
-  { name: 'GitHub', category: 'Tools', icon: 'devicon-github-original' }, // no colored
-  { name: 'VS Code', category: 'Tools', icon: 'devicon-vscode-plain colored' },
-];
-
 const Skills = () => {
+  const { theme } = useTheme();
   const [activeCategory, setActiveCategory] = useState('All');
+
+  const skillsData = [
+    {
+      name: 'JavaScript',
+      category: 'Languages',
+      icon: 'devicon-javascript-plain colored',
+    },
+    {
+      name: 'TypeScript',
+      category: 'Languages',
+      icon: 'devicon-typescript-plain colored',
+    },
+    { name: 'C#', category: 'Languages', icon: 'devicon-csharp-plain colored' },
+    {
+      name: 'C++',
+      category: 'Languages',
+      icon: 'devicon-cplusplus-plain colored',
+    },
+    { name: 'HTML', category: 'Frontend', icon: 'devicon-html5-plain colored' },
+    { name: 'CSS', category: 'Frontend', icon: 'devicon-css3-plain colored' }, // optional
+    {
+      name: 'React',
+      category: 'Frontend',
+      icon: 'devicon-react-original colored',
+    },
+    {
+      name: 'Angular',
+      category: 'Frontend',
+      icon: 'devicon-angularjs-plain colored',
+    },
+    {
+      name: 'Ionic',
+      category: 'Mobile',
+      icon: 'devicon-ionic-original colored',
+    },
+    {
+      name: 'Tailwind',
+      category: 'Frontend',
+      icon: 'devicon-tailwindcss-plain colored',
+    },
+    {
+      name: 'Bootstrap',
+      category: 'Frontend',
+      icon: 'devicon-bootstrap-plain colored',
+    },
+    {
+      name: 'JQuery',
+      category: 'Frontend',
+      icon: 'devicon-jquery-plain colored',
+    },
+    { name: 'Vite', category: 'Tools', icon: 'devicon-vitejs-plain colored' },
+    {
+      name: 'Node.js',
+      category: 'Backend',
+      icon: 'devicon-nodejs-plain colored',
+    },
+    { name: 'PHP', category: 'Backend', icon: 'devicon-php-plain colored' },
+    {
+      name: 'Laravel',
+      category: 'Backend',
+      icon: 'devicon-laravel-plain colored',
+    },
+    {
+      name: 'CodeIgniter 4',
+      category: 'Backend',
+      icon: 'devicon-codeigniter-plain colored',
+    }, // ⚠️ May not exist — fallback to image if needed
+    { name: 'MySQL', category: 'Backend', icon: 'devicon-mysql-plain colored' },
+    {
+      name: 'Firebase',
+      category: 'Deployment',
+      icon: 'devicon-firebase-plain colored',
+    },
+    {
+      name: 'GitHub',
+      category: 'Tools',
+      icon:
+        theme === 'dark'
+          ? 'devicon-github-original' // white icon
+          : 'devicon-github-original colored', // black icon
+    },
+    {
+      name: 'VS Code',
+      category: 'Tools',
+      icon: 'devicon-vscode-plain colored',
+    },
+  ];
 
   const filteredSkills =
     activeCategory === 'All'

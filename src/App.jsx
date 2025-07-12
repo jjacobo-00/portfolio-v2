@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import './App.css';
 import Navbar from './components/Navbar.jsx';
 import Home from './pages/Home.jsx';
+import Footer from './components/Footer.jsx';
 import { useTheme } from './hooks/useTheme.jsx';
 import 'devicon/devicon.min.css';
 
@@ -36,6 +37,7 @@ function App() {
     <>
       <Navbar />
       <Home />
+      <Footer />
     </>
   );
 }

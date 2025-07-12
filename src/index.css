@@ -48,6 +48,14 @@ body {
   @apply transform transition-transform duration-300;
 }
 
+.dark footer {
+  @apply text-white border-gray-800;
+}
+
+.dark .round-icon {
+  @apply bg-gray-800 rounded-full;
+}
+
 /* hide the timeline arrow */
 .timeline-element .vertical-timeline-element-content-arrow {
   display: none;

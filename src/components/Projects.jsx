@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 
 const testProjects = [
   {
@@ -23,7 +24,7 @@ const testProjects = [
     description:
       'My updated developer portfolio made using Vite, Tailwind, and React.',
     tech: ['React', 'Javascript', 'Tailwind', 'Vite', 'HTML'],
-    link: '#',
+    link: 'https://portfolio-v2-hazel-seven.vercel.app/',
   },
   {
     title: 'DevPlayground',
@@ -89,15 +90,23 @@ const Projects = () => {
         {[...testProjects]
           .sort((a, b) => b.year - a.year)
           .map((project, index) => (
-            <a
+            <motion.a
               key={index}
               href={project.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="project-card flex flex-col justify-between h-full rounded-lg p-6 transition-transform transform hover:scale-105"
+              className="project-card flex flex-col justify-between h-full rounded-lg p-6"
               style={{
                 boxShadow:
                   'rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px',
+              }}
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{
+                duration: 0.5,
+                delay: index * 0.1,
+                ease: 'easeInOut',
               }}
             >
               <div>
@@ -110,14 +119,14 @@ const Projects = () => {
                 <p className="text-sm mb-4">{project.description}</p>
               </div>
 
-              <div className="flex flex-wrap gap-2 text-xs text-white">
+              <div className="flex flex-wrap gap-2 text-xs text-white mt-auto">
                 {project.tech.map((tech, idx) => (
                   <span key={idx} className="bg-[#1261A0] px-2 py-1 rounded">
                     {tech}
                   </span>
                 ))}
               </div>
-            </a>
+            </motion.a>
           ))}
       </div>
     </section>

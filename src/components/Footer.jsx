@@ -5,7 +5,7 @@ const email = 'jacobojhay13@gmail.com';
 
 const Footer = () => {
   return (
-    <footer className="w-full border-t border-gray-300 px-4 sm:px-6 md:px-16 py-10 text-gray-700 font-mono transition-colors">
+    <footer className="w-full border border-gray-200 px-4 sm:px-6 md:px-16 py-10 text-gray-700 font-mono transition-colors">
       <div className="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-sm">
         {/* Contact Info */}
         <div className="text-center md:text-left space-y-2">

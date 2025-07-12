@@ -175,7 +175,7 @@ const Skills = () => {
         {filteredSkills.map((skill, i) => (
           <div
             key={i}
-            className="group relative flex flex-col items-center justify-center rounded-md border border-border p-3 aspect-square shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1 hover:border-primary/30 animate-fade-in overflow-hidden"
+            className="skills group relative flex flex-col items-center justify-center rounded-md p-3 aspect-square shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1 hover:border-primary/30 animate-fade-in overflow-hidden"
             style={{ animationDelay: `${300 + i * 50}ms` }}
           >
             {/* Icon */}

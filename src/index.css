@@ -64,6 +64,10 @@ body {
   @apply text-white;
 }
 
+.dark .skills {
+  @apply bg-gray-800;
+}
+
 /* hide the timeline arrow */
 .timeline-element .vertical-timeline-element-content-arrow {
   display: none;

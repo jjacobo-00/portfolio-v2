@@ -37,7 +37,7 @@ const Skills = () => {
       icon: 'devicon-cplusplus-plain colored',
     },
     { name: 'HTML', category: 'Frontend', icon: 'devicon-html5-plain colored' },
-    { name: 'CSS', category: 'Frontend', icon: 'devicon-css3-plain colored' }, // optional
+    { name: 'CSS', category: 'Frontend', icon: 'devicon-css3-plain colored' },
     {
       name: 'React',
       category: 'Frontend',
@@ -68,7 +68,11 @@ const Skills = () => {
       category: 'Frontend',
       icon: 'devicon-jquery-plain colored',
     },
-    { name: 'Vite', category: 'Tools', icon: 'devicon-vitejs-plain colored' },
+    {
+      name: 'Vite',
+      category: 'Tools',
+      icon: 'devicon-vitejs-plain colored',
+    },
     {
       name: 'Node.js',
       category: 'Backend',
@@ -84,25 +88,54 @@ const Skills = () => {
       name: 'CodeIgniter 4',
       category: 'Backend',
       icon: 'devicon-codeigniter-plain colored',
-    }, // ⚠️ May not exist — fallback to image if needed
-    { name: 'MySQL', category: 'Backend', icon: 'devicon-mysql-plain colored' },
+    },
+    {
+      name: 'MySQL',
+      category: 'Backend',
+      icon: 'devicon-mysql-plain colored',
+    },
     {
       name: 'Firebase',
       category: 'Deployment',
       icon: 'devicon-firebase-plain colored',
     },
     {
+      name: 'Docker',
+      category: 'Deployment',
+      icon: 'devicon-docker-plain colored',
+    },
+    {
+      name: 'Postman',
+      category: 'Tools',
+      icon: 'devicon-postman-plain colored',
+    },
+    {
+      name: 'Android',
+      category: 'Mobile',
+      icon: 'devicon-android-plain colored',
+    },
+    {
+      name: 'Stack Overflow',
+      category: 'Tools',
+      icon: 'devicon-stackoverflow-plain colored',
+    },
+    {
       name: 'GitHub',
       category: 'Tools',
       icon:
         theme === 'dark'
-          ? 'devicon-github-original' // white icon
-          : 'devicon-github-original colored', // black icon
+          ? 'devicon-github-original'
+          : 'devicon-github-original colored',
     },
     {
       name: 'VS Code',
       category: 'Tools',
       icon: 'devicon-vscode-plain colored',
+    },
+    {
+      name: 'PhpStorm',
+      category: 'Tools',
+      icon: 'devicon-phpstorm-plain colored',
     },
   ];
 

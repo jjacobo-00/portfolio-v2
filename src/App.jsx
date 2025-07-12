@@ -3,6 +3,7 @@ import './App.css';
 import Navbar from './components/Navbar.jsx';
 import Home from './pages/Home.jsx';
 import { useTheme } from './hooks/useTheme.jsx';
+import 'devicon/devicon.min.css';
 
 function App() {
   const { theme, toggleTheme } = useTheme();

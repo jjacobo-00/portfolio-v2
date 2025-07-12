@@ -56,6 +56,14 @@ body {
   @apply bg-gray-800 rounded-full;
 }
 
+.dark .skills-tab {
+  @apply text-white hover:text-black;
+}
+
+.dark .skill-name {
+  @apply text-white;
+}
+
 /* hide the timeline arrow */
 .timeline-element .vertical-timeline-element-content-arrow {
   display: none;

@@ -126,10 +126,10 @@ const Skills = () => {
           <button
             key={category}
             onClick={() => setActiveCategory(category)}
-            className={`px-4 py-2 rounded-full text-sm font-medium border transition-all duration-300 ${
+            className={`skills-tab px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 shadow-sm text-black ${
               activeCategory === category
-                ? 'bg-white text-black dark:bg-white dark:text-black'
-                : 'bg-transparent border-white/30 text-white hover:bg-white hover:text-black'
+                ? 'bg-[#1261A0] text-white'
+                : 'bg-transparent border-white/30 hover:bg-gray-100'
             }`}
           >
             {category}
@@ -152,7 +152,7 @@ const Skills = () => {
 
             {/* Label hover */}
             <div className="mt-1 text-center sm:absolute sm:inset-0 sm:flex sm:items-center sm:justify-center sm:opacity-0 sm:group-hover:opacity-100 sm:transition-all sm:duration-300 sm:transform sm:group-hover:scale-105">
-              <span className="font-medium text-sm sm:text-xs px-1 py-0.5 sm:py-1 bg-background/80 backdrop-blur-sm rounded-md sm:w-auto sm:mx-2 w-full">
+              <span className="skill-name text-black font-medium text-sm sm:text-xs px-1 py-0.5 sm:py-1 bg-background/80 backdrop-blur-sm rounded-md sm:w-auto sm:mx-2 w-full">
                 {skill.name}
               </span>
             </div>

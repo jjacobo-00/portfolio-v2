@@ -40,6 +40,14 @@ const testProjects = [
       'SweetAlert2',
       'FontAwesome',
     ],
+    link: 'https://jjacobo.infinityfreeapp.com/fitness-tools.php',
+  },
+  {
+    title: 'Mini Cart',
+    year: 2023,
+    description:
+      'A dynamic mini shopping cart system. Users can add products to the cart, increment or decrement quantities, edit directly via input, and automatically calculate subtotals and totals in real-time.',
+    tech: ['HTML', 'JavaScript', 'jQuery', 'Bootstrap', 'DataTables'],
     link: 'https://jjacobo.infinityfreeapp.com/pos.php',
   },
   {

@@ -2,8 +2,10 @@ import { useEffect, useState } from 'react';
 import './App.css';
 import Navbar from './components/Navbar.jsx';
 import Home from './pages/Home.jsx';
+import { useTheme } from './hooks/useTheme.jsx';
 
 function App() {
+  const { theme, toggleTheme } = useTheme();
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
@@ -16,9 +18,8 @@ function App() {
   }, []);
 
   if (isLoading) {
-    const isDark = document.documentElement.classList.contains('dark');
-    console.log(isDark);
-    const bgColor = isDark ? 'bg-gray-900' : 'bg-white';
+    const bgColor = theme === 'dark' ? 'bg-gray-900' : 'bg-white';
+    console.log(theme);
 
     return (
       <div

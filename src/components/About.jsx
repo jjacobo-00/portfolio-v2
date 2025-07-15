@@ -107,7 +107,7 @@ const About = () => {
         href="#experience"
         className="absolute bottom-4 left-1/2 transform -translate-x-1/2"
       >
-        <ChevronDown className="w-6 h-6 animate-bounce text-[#1261A0] cursor-pointer" />
+        <ChevronDown className="hidden sm:block w-6 h-6 animate-bounce text-[#1261A0] cursor-pointer" />
       </a>
     </section>
   );

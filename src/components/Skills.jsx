@@ -73,11 +73,6 @@ const Skills = () => {
       category: 'Tools',
       icon: 'devicon-vitejs-plain colored',
     },
-    {
-      name: 'Node.js',
-      category: 'Backend',
-      icon: 'devicon-nodejs-plain colored',
-    },
     { name: 'PHP', category: 'Backend', icon: 'devicon-php-plain colored' },
     {
       name: 'Laravel',
@@ -136,6 +131,11 @@ const Skills = () => {
       name: 'PhpStorm',
       category: 'Tools',
       icon: 'devicon-phpstorm-plain colored',
+    },
+    {
+      name: '.NET',
+      category: 'Backend',
+      icon: 'devicon-dotnetcore-plain colored',
     },
   ];
 

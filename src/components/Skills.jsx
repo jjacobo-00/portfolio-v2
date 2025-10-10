@@ -140,7 +140,10 @@ const Skills = () => {
     {
       name: "Next.js",
       category: "Frontend",
-      icon: "devicon-nextjs-plain",
+      icon:
+        theme === "dark"
+          ? "devicon-nextjs-plain"
+          : "devicon-nextjs-plain colored",
     },
     {
       name: "Supabase",

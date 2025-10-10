@@ -163,6 +163,16 @@ const Skills = () => {
           ? "devicon-vercel-original"
           : "devicon-vercel-original colored",
     },
+    {
+      name: "Canva",
+      category: "Tools",
+      icon: "devicon-canva-original colored",
+    },
+    {
+      name: "DigitalOcean",
+      category: "Deployment",
+      icon: "devicon-digitalocean-original-wordmark colored",
+    },
   ];
 
   const filteredSkills =

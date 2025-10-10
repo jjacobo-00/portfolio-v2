@@ -171,7 +171,7 @@ const Skills = () => {
     {
       name: "DigitalOcean",
       category: "Deployment",
-      icon: "devicon-digitalocean-original-wordmark colored",
+      icon: "devicon-digitalocean-original colored",
     },
   ];
 

@@ -140,7 +140,7 @@ const Skills = () => {
     {
       name: "Next.js",
       category: "Frontend",
-      icon: "devicon-nextjs-original",
+      icon: "devicon-nextjs-plain",
     },
     {
       name: "Supabase",

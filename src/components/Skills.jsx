@@ -1,146 +1,161 @@
-import React, { useState } from 'react';
-import { useTheme } from '../hooks/useTheme.jsx';
+import React, { useState } from "react";
+import { useTheme } from "../hooks/useTheme.jsx";
 
-const isDark = 'dark' ? true : false;
+const isDark = "dark" ? true : false;
 console.log(isDark);
 
 const categories = [
-  'All',
-  'Languages',
-  'Frontend',
-  'Backend',
-  'Mobile',
-  'Tools',
-  'Deployment',
-  'AI',
+  "All",
+  "Languages",
+  "Frontend",
+  "Backend",
+  "Mobile",
+  "Tools",
+  "Deployment",
+  "AI",
 ];
 
 const Skills = () => {
   const { theme } = useTheme();
-  const [activeCategory, setActiveCategory] = useState('All');
+  const [activeCategory, setActiveCategory] = useState("All");
 
   const skillsData = [
     {
-      name: 'JavaScript',
-      category: 'Languages',
-      icon: 'devicon-javascript-plain colored',
+      name: "JavaScript",
+      category: "Languages",
+      icon: "devicon-javascript-plain colored",
     },
     {
-      name: 'TypeScript',
-      category: 'Languages',
-      icon: 'devicon-typescript-plain colored',
+      name: "TypeScript",
+      category: "Languages",
+      icon: "devicon-typescript-plain colored",
     },
-    { name: 'C#', category: 'Languages', icon: 'devicon-csharp-plain colored' },
+    { name: "C#", category: "Languages", icon: "devicon-csharp-plain colored" },
     {
-      name: 'C++',
-      category: 'Languages',
-      icon: 'devicon-cplusplus-plain colored',
+      name: "C++",
+      category: "Languages",
+      icon: "devicon-cplusplus-plain colored",
     },
-    { name: 'HTML', category: 'Frontend', icon: 'devicon-html5-plain colored' },
-    { name: 'CSS', category: 'Frontend', icon: 'devicon-css3-plain colored' },
+    { name: "HTML", category: "Frontend", icon: "devicon-html5-plain colored" },
+    { name: "CSS", category: "Frontend", icon: "devicon-css3-plain colored" },
     {
-      name: 'React',
-      category: 'Frontend',
-      icon: 'devicon-react-original colored',
-    },
-    {
-      name: 'Angular',
-      category: 'Frontend',
-      icon: 'devicon-angularjs-plain colored',
+      name: "React",
+      category: "Frontend",
+      icon: "devicon-react-original colored",
     },
     {
-      name: 'Ionic',
-      category: 'Mobile',
-      icon: 'devicon-ionic-original colored',
+      name: "Angular",
+      category: "Frontend",
+      icon: "devicon-angularjs-plain colored",
     },
     {
-      name: 'Tailwind',
-      category: 'Frontend',
-      icon: 'devicon-tailwindcss-plain colored',
+      name: "Ionic",
+      category: "Mobile",
+      icon: "devicon-ionic-original colored",
     },
     {
-      name: 'Bootstrap',
-      category: 'Frontend',
-      icon: 'devicon-bootstrap-plain colored',
+      name: "Tailwind",
+      category: "Frontend",
+      icon: "devicon-tailwindcss-plain colored",
     },
     {
-      name: 'JQuery',
-      category: 'Frontend',
-      icon: 'devicon-jquery-plain colored',
+      name: "Bootstrap",
+      category: "Frontend",
+      icon: "devicon-bootstrap-plain colored",
     },
     {
-      name: 'Vite',
-      category: 'Tools',
-      icon: 'devicon-vitejs-plain colored',
-    },
-    { name: 'PHP', category: 'Backend', icon: 'devicon-php-plain colored' },
-    {
-      name: 'Laravel',
-      category: 'Backend',
-      icon: 'devicon-laravel-plain colored',
+      name: "JQuery",
+      category: "Frontend",
+      icon: "devicon-jquery-plain colored",
     },
     {
-      name: 'CodeIgniter 4',
-      category: 'Backend',
-      icon: 'devicon-codeigniter-plain colored',
+      name: "Vite",
+      category: "Tools",
+      icon: "devicon-vitejs-plain colored",
+    },
+    { name: "PHP", category: "Backend", icon: "devicon-php-plain colored" },
+    {
+      name: "Laravel",
+      category: "Backend",
+      icon: "devicon-laravel-plain colored",
     },
     {
-      name: 'MySQL',
-      category: 'Backend',
-      icon: 'devicon-mysql-plain colored',
+      name: "CodeIgniter 4",
+      category: "Backend",
+      icon: "devicon-codeigniter-plain colored",
     },
     {
-      name: 'Firebase',
-      category: 'Deployment',
-      icon: 'devicon-firebase-plain colored',
+      name: "MySQL",
+      category: "Backend",
+      icon: "devicon-mysql-plain colored",
     },
     {
-      name: 'Docker',
-      category: 'Deployment',
-      icon: 'devicon-docker-plain colored',
+      name: "Firebase",
+      category: "Deployment",
+      icon: "devicon-firebase-plain colored",
     },
     {
-      name: 'Postman',
-      category: 'Tools',
-      icon: 'devicon-postman-plain colored',
+      name: "Docker",
+      category: "Deployment",
+      icon: "devicon-docker-plain colored",
     },
     {
-      name: 'Android',
-      category: 'Mobile',
-      icon: 'devicon-android-plain colored',
+      name: "Postman",
+      category: "Tools",
+      icon: "devicon-postman-plain colored",
     },
     {
-      name: 'Stack Overflow',
-      category: 'Tools',
-      icon: 'devicon-stackoverflow-plain colored',
+      name: "Android",
+      category: "Mobile",
+      icon: "devicon-android-plain colored",
     },
     {
-      name: 'GitHub',
-      category: 'Tools',
+      name: "Stack Overflow",
+      category: "Tools",
+      icon: "devicon-stackoverflow-plain colored",
+    },
+    {
+      name: "GitHub",
+      category: "Tools",
       icon:
-        theme === 'dark'
-          ? 'devicon-github-original'
-          : 'devicon-github-original colored',
+        theme === "dark"
+          ? "devicon-github-original"
+          : "devicon-github-original colored",
     },
     {
-      name: 'VS Code',
-      category: 'Tools',
-      icon: 'devicon-vscode-plain colored',
+      name: "VS Code",
+      category: "Tools",
+      icon: "devicon-vscode-plain colored",
     },
     {
-      name: 'PhpStorm',
-      category: 'Tools',
-      icon: 'devicon-phpstorm-plain colored',
+      name: "PhpStorm",
+      category: "Tools",
+      icon: "devicon-phpstorm-plain colored",
     },
     {
-      name: '.NET',
-      category: 'Backend',
-      icon: 'devicon-dotnetcore-plain colored',
+      name: ".NET",
+      category: "Backend",
+      icon: "devicon-dotnetcore-plain colored",
+    },
+    {
+      name: "Next.js",
+      category: "Frontend",
+      icon: "devicon-nextjs-original",
+    },
+    {
+      name: "Supabase",
+      category: "Backend",
+      icon: "devicon-supabase-plain colored",
+    },
+    {
+      name: "Appwrite",
+      category: "Backend",
+      icon: "devicon-appwrite-plain colored",
     },
   ];
 
   const filteredSkills =
-    activeCategory === 'All'
+    activeCategory === "All"
       ? skillsData
       : skillsData.filter((skill) => skill.category === activeCategory);
 
@@ -161,8 +176,8 @@ const Skills = () => {
             onClick={() => setActiveCategory(category)}
             className={`skills-tab px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 shadow-sm text-black ${
               activeCategory === category
-                ? 'bg-[#1261A0] text-white'
-                : 'bg-transparent border-white/30 hover:bg-gray-100'
+                ? "bg-[#1261A0] text-white"
+                : "bg-transparent border-white/30 hover:bg-gray-100"
             }`}
           >
             {category}

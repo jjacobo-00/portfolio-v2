@@ -91,7 +91,7 @@ const Skills = () => {
     },
     {
       name: "Firebase",
-      category: "Deployment",
+      category: "Backend",
       icon: "devicon-firebase-plain colored",
     },
     {
@@ -154,6 +154,14 @@ const Skills = () => {
       name: "Appwrite",
       category: "Backend",
       icon: "devicon-appwrite-plain colored",
+    },
+    {
+      name: "Vercel",
+      category: "Deployment",
+      icon:
+        theme === "dark"
+          ? "devicon-vercel-original"
+          : "devicon-vercel-original colored",
     },
   ];
 

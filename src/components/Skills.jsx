@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Gemini } from "@lobehub/icons";
 import { useTheme } from "../hooks/useTheme.jsx";
 
 const isDark = "dark" ? true : false;
@@ -178,6 +179,11 @@ const Skills = () => {
       category: "Backend",
       icon: "devicon-nodejs-plain colored",
     },
+    {
+      name: "Google Gemini",
+      category: "AI",
+      iconComponent: <Gemini size={40} color="#4285F4" />,
+    },
   ];
 
   const filteredSkills =
@@ -221,7 +227,11 @@ const Skills = () => {
           >
             {/* Icon */}
             <div className="text-3xl flex items-center justify-center transition-all duration-300 sm:group-hover:scale-75 sm:group-hover:opacity-10">
-              <i className={`${skill.icon} text-white`}></i>
+              {skill.iconComponent ? (
+                skill.iconComponent
+              ) : (
+                <i className={`${skill.icon} text-white`}></i>
+              )}
             </div>
 
             {/* Label hover */}

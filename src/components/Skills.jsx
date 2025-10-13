@@ -173,6 +173,11 @@ const Skills = () => {
       category: "Deployment",
       icon: "devicon-digitalocean-original colored",
     },
+    {
+      name: "Node.js",
+      category: "Backend",
+      icon: "devicon-nodejs-plain colored",
+    },
   ];
 
   const filteredSkills =

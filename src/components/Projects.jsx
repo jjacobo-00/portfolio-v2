@@ -1,86 +1,101 @@
-import React from 'react';
-import { motion } from 'framer-motion';
+import React from "react";
+import { motion } from "framer-motion";
 
-const testProjects = [
+const projects_r = [
   {
-    title: 'Recipedia',
+    title: "Primary 5 Math Problem Generator",
     year: 2025,
     description:
-      'A recipe search and filter app built with React, Tailwind, and dummy JSON API.',
-    tech: ['React', 'Javascript', 'Tailwind', 'Vite', 'Dummy JSON API', 'HTML'],
-    link: 'https://recipedia-gold.vercel.app/',
+      "a starter kit for building an AI-powered math problem generator application. The goal is to create a standalone prototype that uses AI to generate math word problems suitable for Primary 5 students, saves the problems and user submissions to a database, and provides personalized feedback.",
+    tech: [
+      "Next.js",
+      "TypeScript",
+      "Tailwind",
+      "Supabase",
+      "Google Gemini",
+      "HTML",
+    ],
+    link: "https://github.com/jjacobo-00/Primary-5-Math-Problem",
   },
   {
-    title: 'To Do',
-    year: 2023,
-    description:
-      'A minimalist to-do app that allows users to add, edit, and delete tasks. Built with React, Tailwind CSS, and Vite for a fast and responsive experience.',
-    tech: ['React', 'Javascript', 'Tailwind', 'Vite', 'HTML'],
-    link: 'https://todo-pi-ten.vercel.app/',
-  },
-  {
-    title: 'Portfolio V2',
+    title: "Recipedia",
     year: 2025,
     description:
-      'My updated developer portfolio made using Vite, Tailwind, and React.',
-    tech: ['React', 'Javascript', 'Tailwind', 'Vite', 'HTML'],
-    link: 'https://portfolio-v2-hazel-seven.vercel.app/',
+      "A recipe search and filter app built with React, Tailwind, and dummy JSON API.",
+    tech: ["React", "Javascript", "Tailwind", "Vite", "Dummy JSON API", "HTML"],
+    link: "https://recipedia-gold.vercel.app/",
   },
   {
-    title: 'DevPlayground',
+    title: "To Do",
     year: 2023,
     description:
-      'A dynamic collection of mini web apps built on a single page. Each module opens in a modal and showcases interactive UI and form handling.',
-    tech: [
-      'JavaScript',
-      'jQuery',
-      'HTML',
-      'Bootstrap',
-      'DataTables',
-      'SweetAlert2',
-      'FontAwesome',
-    ],
-    link: 'https://jjacobo.infinityfreeapp.com/fitness-tools.php',
+      "A minimalist to-do app that allows users to add, edit, and delete tasks. Built with React, Tailwind CSS, and Vite for a fast and responsive experience.",
+    tech: ["React", "Javascript", "Tailwind", "Vite", "HTML"],
+    link: "https://todo-pi-ten.vercel.app/",
   },
   {
-    title: 'Mini Cart',
+    title: "Portfolio V2",
+    year: 2025,
+    description:
+      "My updated developer portfolio made using Vite, Tailwind, and React.",
+    tech: ["React", "Javascript", "Tailwind", "Vite", "HTML"],
+    link: "https://portfolio-v2-hazel-seven.vercel.app/",
+  },
+  {
+    title: "DevPlayground",
     year: 2023,
     description:
-      'A dynamic mini shopping cart system. Users can add products to the cart, increment or decrement quantities, edit directly via input, and automatically calculate subtotals and totals in real-time.',
-    tech: ['HTML', 'JavaScript', 'jQuery', 'Bootstrap', 'DataTables'],
-    link: 'https://jjacobo.infinityfreeapp.com/pos.php',
+      "A dynamic collection of mini web apps built on a single page. Each module opens in a modal and showcases interactive UI and form handling.",
+    tech: [
+      "JavaScript",
+      "jQuery",
+      "HTML",
+      "Bootstrap",
+      "DataTables",
+      "SweetAlert2",
+      "FontAwesome",
+    ],
+    link: "https://jjacobo.infinityfreeapp.com/fitness-tools.php",
   },
   {
-    title: 'Service Manager (Web & Mobile)',
-    year: 2022,
+    title: "Mini Cart",
+    year: 2023,
     description:
-      'A field service tool with a web dashboard for admins to assign and track jobs, and a mobile app for technicians to perform diagnostics, update statuses, and submit reports on-site.',
-    tech: [
-      'CodeIgniter 4',
-      'Javascript',
-      'MySQL',
-      'Tailwind',
-      'Vite',
-      'HTML',
-      'Ionic',
-      'Angular',
-    ],
-    link: '#',
+      "A dynamic mini shopping cart system. Users can add products to the cart, increment or decrement quantities, edit directly via input, and automatically calculate subtotals and totals in real-time.",
+    tech: ["HTML", "JavaScript", "jQuery", "Bootstrap", "DataTables"],
+    link: "https://jjacobo.infinityfreeapp.com/pos.php",
   },
   {
-    title: 'Veterinary Web Based Management System',
+    title: "Service Manager (Web & Mobile)",
     year: 2022,
     description:
-      'A web platform for managing veterinary appointments, pet records, clinic locations, inventory, and sales with integrated POS, Google Maps, and PayPal payment support.',
+      "A field service tool with a web dashboard for admins to assign and track jobs, and a mobile app for technicians to perform diagnostics, update statuses, and submit reports on-site.",
     tech: [
-      'PHP',
-      'Javascript',
-      'MySQL',
-      'Bootstrap',
-      'Google Map API',
-      'Paypal API',
+      "CodeIgniter 4",
+      "Javascript",
+      "MySQL",
+      "Tailwind",
+      "Vite",
+      "HTML",
+      "Ionic",
+      "Angular",
     ],
-    link: '#',
+    link: "#",
+  },
+  {
+    title: "Veterinary Web Based Management System",
+    year: 2022,
+    description:
+      "A web platform for managing veterinary appointments, pet records, clinic locations, inventory, and sales with integrated POS, Google Maps, and PayPal payment support.",
+    tech: [
+      "PHP",
+      "Javascript",
+      "MySQL",
+      "Bootstrap",
+      "Google Map API",
+      "Paypal API",
+    ],
+    link: "#",
   },
 ];
 
@@ -95,7 +110,7 @@ const Projects = () => {
       </h2>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        {[...testProjects]
+        {[...projects_r]
           .sort((a, b) => b.year - a.year)
           .map((project, index) => (
             <motion.a
@@ -106,7 +121,7 @@ const Projects = () => {
               className="project-card flex flex-col justify-between h-full rounded-lg p-6"
               style={{
                 boxShadow:
-                  'rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px',
+                  "rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px",
               }}
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -114,12 +129,12 @@ const Projects = () => {
               transition={{
                 duration: 0.5,
                 delay: index * 0.1,
-                ease: 'easeInOut',
+                ease: "easeInOut",
               }}
             >
               <div>
                 <h3 className="text-xl font-semibold text-[#1261A0] mb-2">
-                  {project.title}{' '}
+                  {project.title}{" "}
                   <span className="text-gray-500 text-sm">
                     ({project.year})
                   </span>

@@ -15,7 +15,7 @@ const projects_r = [
       "Google Gemini",
       "HTML",
     ],
-    link: "https://github.com/jjacobo-00/Primary-5-Math-Problem",
+    link: "https://primary-5-math-problem.vercel.app/",
   },
   {
     title: "Recipedia",

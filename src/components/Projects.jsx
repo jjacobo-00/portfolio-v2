@@ -29,8 +29,8 @@ const projects_r = [
     title: "To Do",
     year: 2023,
     description:
-      "A minimalist to-do app that allows users to add, edit, and delete tasks. Built with React, Tailwind CSS, and Vite for a fast and responsive experience.",
-    tech: ["React", "Javascript", "Tailwind", "Vite", "HTML"],
+      "A simple and modern To-Do list built with React, TypeScript, TailwindCSS, and Supabase for backend storage. You can add, view, and (soon) edit/delete tasks directly connected to your Supabase database",
+    tech: ["React", "Supabase", "Javascript", "Tailwind", "Vite", "HTML"],
     link: "https://todo-pi-ten.vercel.app/",
   },
   {

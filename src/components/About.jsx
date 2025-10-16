@@ -1,8 +1,8 @@
-import React from 'react';
-import profile from '../assets/images/jjacobo-1.webp';
-import { Typewriter } from 'react-simple-typewriter';
-import { ChevronDown, Download } from 'lucide-react';
-import { motion } from 'framer-motion';
+import React from "react";
+import profile from "../assets/images/jjacobo-1.webp";
+import { Typewriter } from "react-simple-typewriter";
+import { ChevronDown, Download } from "lucide-react";
+import { motion } from "framer-motion";
 
 const About = () => {
   return (
@@ -28,10 +28,10 @@ const About = () => {
           >
             <Typewriter
               words={[
-                'A full-stack developer.',
-                'Growth-Oriented Developer.',
-                'Minimalist Coder.',
-                'Code with Passion.',
+                "A full-stack developer.",
+                "Growth-Oriented Developer.",
+                "Minimalist Coder.",
+                "Code with Passion.",
               ]}
               loop
               cursor
@@ -44,16 +44,21 @@ const About = () => {
         </h3>
 
         <p className="text-sm sm:text-base mb-4 leading-relaxed">
-          I'm a Full-Stack Developer based in the Philippines. I have developed
-          many types of websites and software — from mobile apps to booking
-          systems to eCommerce platforms.
+          I’m a Full Stack Developer with over 3 years of experience,
+          specializing in web development while also having exposure to mobile
+          and desktop software. Based in the Philippines, I’ve developed a wide
+          range of projects — from eCommerce platforms and booking systems to
+          internal tools and mobile service management apps.
         </p>
         <p className="text-sm sm:text-base leading-relaxed">
-          I have experience maintaining systems, building APIs, integrating
-          features, and turning ideas into functional apps. I’ve worked with
-          desktop (.NET/C#), mobile (Angular), and web (CodeIgniter 4)
-          applications — and I’m always eager to learn new technologies to build
-          scalable, modern solutions.
+          I have experience maintaining and improving large-scale systems,
+          building RESTful APIs, and integrating third-party services to create
+          efficient, user-friendly applications. I’ve worked with desktop
+          (.NET/C#), mobile (Ionic Angular), and web (CodeIgniter 4, PHP, React,
+          JavaScript, MySQL, Supabase ) applications. Currently, I’m focused on
+          expanding my skills in Next.js, Laravel, and other modern web
+          technologies — continuously learning to build scalable and innovative
+          solutions.
         </p>
 
         <motion.div
@@ -79,7 +84,7 @@ const About = () => {
           </a>
           <a
             onClick={() =>
-              (window.location.href = 'mailto:jacobojhay13@gmail.com')
+              (window.location.href = "mailto:jacobojhay13@gmail.com")
             }
             className="px-5 py-2 rounded-lg border bg-transparent border-gray-400 hover:bg-gray-100 dark:hover:bg-white hover:text-black dark:hover:text-black transform transition-transform duration-200 hover:scale-105"
           >

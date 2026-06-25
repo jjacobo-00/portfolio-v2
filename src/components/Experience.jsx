@@ -1,26 +1,33 @@
-import React from 'react';
+import React from "react";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
-} from 'react-vertical-timeline-component';
-import 'react-vertical-timeline-component/style.min.css';
-import { Briefcase } from 'lucide-react';
-import { useTheme } from '../hooks/useTheme.jsx'; // Make sure this is the right path
+} from "react-vertical-timeline-component";
+import "react-vertical-timeline-component/style.min.css";
+import { Briefcase } from "lucide-react";
+import { useTheme } from "../hooks/useTheme.jsx"; // Make sure this is the right path
 
 const experiences = [
   {
-    year: 'Sep 07, 2023 - Present',
-    role: 'Full-Stack Developer',
-    company: 'PA-Support Subic Ltd Inc',
+    year: "Dec 27, 2025 - Present",
+    role: "Application Developer",
+    company: "Booth",
     description:
-      'Maintaining and enhancing a large-scale legacy codebase built with native PHP, JavaScript, jQuery, and MySQL. Refactored marketplace UI for improved usability, implemented product image zoom on product pages, and developed the customer review system. Improved discount logic based on loyalty rank and added a barcode scanner feature to the admin panel. Integrated multiple delivery carrier APIs (e.g., FedEx, BoxC, UPS) for shipment tracking and automated delivery status updates (in transit, delivered) using cron jobs for the admin warehouse tracking system. Contributed to ongoing enhancements for the Play-Asia.com platform.',
+      "Maintain and enhance internal business applications built on the Zoho platform, including Zoho Creator, Zoho Expense, Zoho Flow, and Zoho Writer, as well as legacy WordPress systems. Develop custom solutions for enterprise projects by leveraging AI technologies such as Claude AI to automate workflows, improve operational efficiency, and reduce manual tasks. Collaborate closely with management and QA teams to refine requirements, implement enhancements, and deliver reliable solutions that improve productivity and streamline business processes.",
   },
   {
-    year: 'May 30, 2022 - Sep 06, 2023',
-    role: 'Full-Stack Developer',
-    company: 'Dunbrae Subic Inc',
+    year: "Sep 07, 2023 - Aug 7, 2025",
+    role: "Full-Stack Developer",
+    company: "PA-Support Subic Ltd Inc",
     description:
-      'Developed internal dashboards and maintained tools using CodeIgniter 4. Built RESTful APIs to support cross-platform functionality and collaborated with various departments to automate workflows. Also contributed to a mobile service management app using Ionic Angular.',
+      "Maintaining and enhancing a large-scale legacy codebase built with native PHP, JavaScript, jQuery, and MySQL. Refactored marketplace UI for improved usability, implemented product image zoom on product pages, and developed the customer review system. Improved discount logic based on loyalty rank and added a barcode scanner feature to the admin panel. Integrated multiple delivery carrier APIs (e.g., FedEx, BoxC, UPS) for shipment tracking and automated delivery status updates (in transit, delivered) using cron jobs for the admin warehouse tracking system. Contributed to ongoing enhancements for the Play-Asia.com platform.",
+  },
+  {
+    year: "May 30, 2022 - Sep 06, 2023",
+    role: "Full-Stack Developer",
+    company: "Dunbrae Subic Inc",
+    description:
+      "Developed internal dashboards and maintained tools using CodeIgniter 4. Built RESTful APIs to support cross-platform functionality and collaborated with various departments to automate workflows. Also contributed to a mobile service management app using Ionic Angular.",
   },
 ];
 
@@ -29,7 +36,7 @@ const ExpandableDescription = ({ text, expanded }) => {
     <div className="relative text-sm leading-relaxed">
       <div
         className={`relative overflow-hidden transition-all duration-500 ease-in-out ${
-          expanded ? 'max-h-[1000px]' : 'max-h-[110px]'
+          expanded ? "max-h-[1000px]" : "max-h-[110px]"
         }`}
       >
         <p>{text}</p>
@@ -65,15 +72,15 @@ const Experience = () => {
             date={exp.year}
             icon={<Briefcase />}
             iconStyle={{
-              background: '#1261A0',
-              color: '#fff',
+              background: "#1261A0",
+              color: "#fff",
             }}
             contentStyle={{
               boxShadow:
-                'rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px',
-              borderRadius: '0.5rem',
+                "rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px",
+              borderRadius: "0.5rem",
             }}
-            contentArrowStyle={{ display: 'none' }}
+            contentArrowStyle={{ display: "none" }}
           >
             <div onClick={() => toggleExpand(index)}>
               <h3 className="text-lg font-bold">{exp.role}</h3>

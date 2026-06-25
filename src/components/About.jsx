@@ -44,21 +44,25 @@ const About = () => {
         </h3>
 
         <p className="text-sm sm:text-base mb-4 leading-relaxed">
-          I’m a Full Stack Developer with over 3 years of experience,
-          specializing in web development while also having exposure to mobile
-          and desktop software. Based in the Philippines, I’ve developed a wide
-          range of projects — from eCommerce platforms and booking systems to
-          internal tools and mobile service management apps.
+          I'm a Full Stack Developer with over 3 years of experience building,
+          maintaining, and enhancing web, mobile, and desktop applications.
+          Throughout my career, I've worked on a wide range of solutions,
+          including legacy eCommerce platforms, booking systems, business
+          process automation tools, internal applications, and enterprise
+          software that help organizations streamline their daily operations and
+          improve productivity.
         </p>
+
         <p className="text-sm sm:text-base leading-relaxed">
-          I have experience maintaining and improving large-scale systems,
-          building RESTful APIs, and integrating third-party services to create
-          efficient, user-friendly applications. I’ve worked with desktop
-          (.NET/C#), mobile (Ionic Angular), and web (CodeIgniter 4, PHP, React,
-          JavaScript, MySQL, Supabase ) applications. Currently, I’m focused on
-          expanding my skills in Next.js, Laravel, and other modern web
-          technologies — continuously learning to build scalable and innovative
-          solutions.
+          Currently, I develop and maintain internal business applications using
+          the Zoho ecosystem (Zoho Creator, Zoho Flow, Zoho Expense, and Zoho
+          Writer) while supporting and improving legacy WordPress systems. I
+          also build AI-assisted solutions using Claude AI to automate
+          workflows, improve efficiency, and reduce manual effort for enterprise
+          projects. My experience spans React, Next.js, Laravel, PHP,
+          CodeIgniter 4, .NET/C#, MySQL, and Supabase, and I continuously
+          explore modern technologies to create scalable, user-focused, and
+          high-performance applications.
         </p>
 
         <motion.div
@@ -74,7 +78,7 @@ const About = () => {
             View Projects
           </a>
           <a
-            href="/resume.pdf"
+            href="https://drive.usercontent.google.com/download?id=1HgjB6kXOfouBtpORN9ZsFK4WofKFUGP7&export=download&authuser=0&confirm=t&uuid=7d49b93f-1614-46a0-86ab-05ea81c202af&at=ABswASbPiTcCYDB8789q4J_dnHfW:1782371088921"
             target="_blank"
             rel="noopener noreferrer"
             className="px-5 py-2 rounded-lg border border-[#1261A0] text-[#1261A0] hover:bg-gray-100 dark:hover:bg-white hover:text-black dark:hover:text-black inline-flex items-center gap-2 transform transition-transform duration-200 hover:scale-105"

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Gemini } from "@lobehub/icons";
 import { useTheme } from "../hooks/useTheme.jsx";
+import { SiClaude, SiOpenai, SiZoho } from "react-icons/si";
 
 const isDark = "dark" ? true : false;
 console.log(isDark);
@@ -183,6 +184,31 @@ const Skills = () => {
       name: "Google Gemini",
       category: "AI",
       iconComponent: <Gemini size={40} color="#4285F4" />,
+    },
+    {
+      name: "Claude AI",
+      category: "AI",
+      iconComponent: <SiClaude size={40} />,
+    },
+    {
+      name: "Zoho Creator",
+      category: "Tools",
+      iconComponent: <SiZoho size={40} />,
+    },
+    {
+      name: "Zoho Forms",
+      category: "Tools",
+      iconComponent: <SiZoho size={40} />,
+    },
+    {
+      name: "Zoho Expense",
+      category: "Tools",
+      iconComponent: <SiZoho size={40} />,
+    },
+    {
+      name: "Zoho Flow",
+      category: "Tools",
+      iconComponent: <SiZoho size={40} />,
     },
   ];
 

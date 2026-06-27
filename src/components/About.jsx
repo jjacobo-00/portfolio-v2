@@ -44,7 +44,7 @@ const About = () => {
         </h3>
 
         <p className="text-sm sm:text-base mb-4 leading-relaxed">
-          I'm a Full Stack Developer with over 3 years of experience building,
+          I'm a Full Stack Developer with over 4 years of experience building,
           maintaining, and enhancing web, mobile, and desktop applications.
           Throughout my career, I've worked on a wide range of solutions,
           including legacy eCommerce platforms, booking systems, business

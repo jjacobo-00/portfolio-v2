@@ -44,25 +44,31 @@ const About = () => {
         </h3>
 
         <p className="text-sm sm:text-base mb-4 leading-relaxed">
-          I'm a Full Stack Developer with over 4 years of experience building,
-          maintaining, and enhancing web, mobile, and desktop applications.
-          Throughout my career, I've worked on a wide range of solutions,
-          including legacy eCommerce platforms, booking systems, business
-          process automation tools, internal applications, and enterprise
-          software that help organizations streamline their daily operations and
-          improve productivity.
+          I'm a Full Stack Developer with 4+ years of experience turning complex
+          business problems into clean, scalable software. I've shipped
+          solutions across web, mobile, and desktop — from legacy eCommerce
+          platforms and booking systems to business process automation tools and
+          enterprise applications — helping organizations cut manual effort,
+          streamline daily operations, and move faster.
+        </p>
+
+        <p className="text-sm sm:text-base mb-4 leading-relaxed">
+          What sets me apart today is how I build: I integrate AI directly into
+          development workflows. Using Claude AI, I design intelligent
+          automation that reduces repetitive work, surfaces insights faster, and
+          gives teams back hours they used to spend on manual processes. In an
+          era where businesses expect software to think alongside them, I build
+          for that.
         </p>
 
         <p className="text-sm sm:text-base leading-relaxed">
-          Currently, I develop and maintain internal business applications using
-          the Zoho ecosystem (Zoho Creator, Zoho Flow, Zoho Expense, and Zoho
-          Writer) while supporting and improving legacy WordPress systems. I
-          also build AI-assisted solutions using Claude AI to automate
-          workflows, improve efficiency, and reduce manual effort for enterprise
-          projects. My experience spans React, Next.js, Laravel, PHP,
-          CodeIgniter 4, .NET/C#, MySQL, and Supabase, and I continuously
-          explore modern technologies to create scalable, user-focused, and
-          high-performance applications.
+          My current stack spans React, Next.js, Laravel, PHP, CodeIgniter 4,
+          .NET/C#, MySQL, Supabase, and the Zoho ecosystem (Creator, Flow,
+          Expense, Writer). I own features end-to-end — from architecture
+          decisions to deployment — so you're never waiting on handoffs. If
+          you're looking for a developer who can move fast, think across the
+          full system, and build software that actually solves problems, let's
+          talk.
         </p>
 
         <motion.div

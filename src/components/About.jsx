@@ -62,12 +62,12 @@ const About = () => {
         </p>
 
         <p className="text-sm sm:text-base leading-relaxed">
-          My current stack spans React, Next.js, Laravel, PHP, CodeIgniter 4,
-          .NET/C#, MySQL, Supabase, and the Zoho ecosystem (Creator, Flow,
-          Expense, Writer). I own features end-to-end — from architecture
-          decisions to deployment — so you're never waiting on handoffs. If
-          you're looking for a developer who can move fast, think across the
-          full system, and build software that actually solves problems, let's
+          I specialize in the Zoho ecosystem — Creator, Flow, Expense, and
+          Writer — helping businesses get the most out of the tools they're
+          already running on. Beyond Zoho, I build and connect the rest of the
+          stack: React, Next.js, Laravel, PHP, .NET/C#, MySQL, and Supabase. I
+          own projects end-to-end, so you get faster delivery and fewer
+          handoffs. If your business runs on Zoho or you're planning to, let's
           talk.
         </p>
 

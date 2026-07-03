@@ -53,12 +53,11 @@ const About = () => {
         </p>
 
         <p className="text-sm sm:text-base mb-4 leading-relaxed">
-          What sets me apart today is how I build: I integrate AI directly into
-          development workflows. Using Claude AI, I design intelligent
-          automation that reduces repetitive work, surfaces insights faster, and
-          gives teams back hours they used to spend on manual processes. In an
-          era where businesses expect software to think alongside them, I build
-          for that.
+          Beyond building applications, I help businesses work smarter. I
+          leverage AI, including Claude, to create intelligent workflows,
+          automate repetitive tasks, and streamline operations. My goal isn't
+          simply to add AI—it's to solve real business problems with solutions
+          that save time and improve productivity.
         </p>
 
         <p className="text-sm sm:text-base leading-relaxed">

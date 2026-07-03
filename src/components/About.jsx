@@ -62,13 +62,13 @@ const About = () => {
         </p>
 
         <p className="text-sm sm:text-base leading-relaxed">
-          I specialize in the Zoho ecosystem — Creator, Flow, Expense, and
-          Writer — helping businesses get the most out of the tools they're
-          already running on. Beyond Zoho, I build and connect the rest of the
-          stack: React, Next.js, Laravel, PHP, .NET/C#, MySQL, and Supabase. I
-          own projects end-to-end, so you get faster delivery and fewer
-          handoffs. If your business runs on Zoho or you're planning to, let's
-          talk.
+          I help businesses build modern web applications and automate workflows
+          with the Zoho ecosystem. Whether it's developing scalable applications
+          with React, Next.js, Laravel, and .NET or creating custom business
+          solutions with Zoho Creator and Flow, I focus on delivering software
+          that improves efficiency and solves real-world problems. I take
+          projects from architecture to deployment, ensuring every piece works
+          together seamlessly.
         </p>
 
         <motion.div

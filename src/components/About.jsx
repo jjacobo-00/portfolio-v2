@@ -44,12 +44,12 @@ const About = () => {
         </h3>
 
         <p className="text-sm sm:text-base mb-4 leading-relaxed">
-          I'm a Full Stack Developer with 4+ years of experience turning complex
-          business problems into clean, scalable software. I've shipped
-          solutions across web, mobile, and desktop — from legacy eCommerce
-          platforms and booking systems to business process automation tools and
-          enterprise applications — helping organizations cut manual effort,
-          streamline daily operations, and move faster.
+          I'm a Full Stack Developer with 4+ years of experience building
+          scalable software that solves real business problems. I've delivered
+          web, mobile, and desktop applications—from legacy eCommerce platforms
+          and booking systems to enterprise software, business automation, and
+          AI-assisted solutions—helping organizations reduce manual work,
+          streamline operations, and improve productivity.
         </p>
 
         <p className="text-sm sm:text-base mb-4 leading-relaxed">

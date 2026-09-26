@@ -13,7 +13,7 @@ const experiences = [
     role: "Application Developer",
     company: "Booth",
     description:
-      "Maintain and enhance internal business applications built on the Zoho platform, including Zoho Creator, Zoho Expense, Zoho Flow, and Zoho Writer, as well as legacy WordPress systems. Develop custom solutions for enterprise projects by leveraging AI technologies such as Claude AI to automate workflows, improve operational efficiency, and reduce manual tasks. Collaborate closely with management and QA teams to refine requirements, implement enhancements, and deliver reliable solutions that improve productivity and streamline business processes.",
+      "Maintain and enhance internal business applications built on the Zoho platform, including Zoho Creator, Zoho Expense, Zoho Flow, Zoho Analytics, Zoho DataPrep, Zoho Form, Zoho Survey and Zoho Writer, as well as legacy WordPress systems. Develop custom solutions for enterprise projects by leveraging AI technologies such as Claude AI to automate workflows, improve operational efficiency, and reduce manual tasks. Collaborate closely with management and QA teams to refine requirements, implement enhancements, and deliver reliable solutions that improve productivity and streamline business processes.",
   },
   {
     year: "Sep 07, 2023 - Aug 7, 2025",

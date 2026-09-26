@@ -3,6 +3,22 @@ import { motion } from "framer-motion";
 
 const projects_r = [
   {
+    title: "Sports Analytics Dashboard",
+    year: 2026,
+    description:
+      "A comprehensive sports analytics dashboard that provides real-time insights into player performance, team statistics, and game analytics. The platform leverages advanced data visualization techniques to present complex data in an intuitive manner.",
+    tech: ["Zoho Creator", "Zoho Analytics", "Zoho DataPrep", "Deluge Script"],
+    link: "",
+  },
+  {
+    title: "Rubricore",
+    year: 2026,
+    description:
+      "An AI-powered configurable QA auditing platform that analyzes client transcripts against configurable QA rubrics and standards.",
+    tech: ["Claude AI", "Next.js", "TypeScript", "Tailwind", "Supabase"],
+    link: "",
+  },
+  {
     title: "Primary 5 Math Problem Generator",
     year: 2025,
     description:

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Gemini } from "@lobehub/icons";
 import { useTheme } from "../hooks/useTheme.jsx";
-import { SiClaude, SiOpenai, SiZoho } from "react-icons/si";
+import { SiClaude, SiOpenai, SiZoho, SiGoogleappsscript } from "react-icons/si";
 
 const isDark = "dark" ? true : false;
 console.log(isDark);
@@ -209,6 +209,11 @@ const Skills = () => {
       name: "Zoho Flow",
       category: "Tools",
       iconComponent: <SiZoho size={40} />,
+    },
+    {
+      name: "Google Apps Script",
+      category: "Tools",
+      iconComponent: <SiGoogleappsscript size={40} />,
     },
   ];
 
